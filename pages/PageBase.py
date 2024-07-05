@@ -11,6 +11,12 @@ class PageBase:
         element_to_hover_over = self.wait_element_visibility(locator)
         hover = ActionChains(self.driver).move_to_element(element_to_hover_over)
         hover.perform()
+   
+    def scroll_down(self):
+        self.driver.execute_script("scrollBy(0,500)")
+
+    def scroll_up(self):
+        self.driver.execute_script("scrollBy(0,-500)")
 
     def webelement_listesinden_string_listesi_ver(self, locator):
         elements = self.driver.find_elements(*locator)
