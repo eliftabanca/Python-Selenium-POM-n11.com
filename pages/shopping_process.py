@@ -41,6 +41,9 @@ class ShoppingProcess(PageBase):
         quantity_value = quantity.get_attribute("value")
         return quantity_value
     
+    def aydinlatma_metni(self):
+        tamam_button= self.wait_element_visibility(AYDINLATMA_METNI_BUTTON)
+
     def click_clear_button(self):
         clear_button = self.wait_element_visibility(CLEAR_BUTTON)
         clear_button.click()

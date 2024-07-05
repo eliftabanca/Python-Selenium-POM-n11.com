@@ -39,3 +39,5 @@ CLEAR_BUTTON = (By.ID, "127254023919")
 
 AFTER_CLEAR_LOCATOR = (By.CLASS_NAME, "removeProd.svgIcon.svgIcon_trash")
 AFTER_CLEAR_TITLE = "Sepetin Boş Görünüyor"
+
+AYDINLATMA_METNI_BUTTON = (By.CLASS_NAME, "btn.btnBlack")
