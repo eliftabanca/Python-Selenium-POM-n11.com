@@ -30,8 +30,12 @@ BASCET_NUM_TEXT = "1"
 
 BASCET_BUTTON_LOCATOR = (By.CLASS_NAME, "iconsBasketWhite")
 
-#PLUS_BUTTON = (By.XPATH, "//*[@id='newCheckout']/div/div[1]/div[1]/div[3]/div/section/table[2]/tbody/tr/td[1]/div[3]/div[2]/div/span[1]")
-PLUS_BUTTON = (By.CLASS_NAME,"//*[@id=newCheckout']/div/div[1]/div[1]/div[3]/div/section/table[2]/tbody/tr/td[1]/div[3]/div[3]/form")
+PLUS_BUTTON = (By.XPATH,"//*[@id='newCheckout']/div/div[1]/div[1]/div[2]/section/table[2]/tbody/tr/td[1]/div[3]/div[2]/div/span[1]")
 
 PLUS_QUANTITY = (By.ID, "quantity_127254023919")
-PLUS_QUANTITY_TEXT = 2  
+PLUS_QUANTITY_TEXT = "2"
+
+CLEAR_BUTTON = (By.ID, "127254023919")
+
+AFTER_CLEAR_LOCATOR = (By.CLASS_NAME, "removeProd.svgIcon.svgIcon_trash")
+AFTER_CLEAR_TITLE = "Sepetin Boş Görünüyor"

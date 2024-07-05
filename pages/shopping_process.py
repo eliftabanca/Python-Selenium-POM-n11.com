@@ -38,7 +38,16 @@ class ShoppingProcess(PageBase):
     
     def assert_quantity(self):
         quantity = self.wait_element_visibility(PLUS_QUANTITY)
-        return quantity.text
+        quantity_value = quantity.get_attribute("value")
+        return quantity_value
+    
+    def click_clear_button(self):
+        clear_button = self.wait_element_visibility(CLEAR_BUTTON)
+        clear_button.click()
+
+    def assert_clear_basket(self):
+        assert_clear_button = self.wait_element_visibility(AFTER_CLEAR_LOCATOR)
+        assert_clear_button.click()
 
     
 
