@@ -1,12 +1,4 @@
 [
-  "tests/test_categories.py::CategoryBrowsingTest::test_display_product_details_by_price",
-  "tests/test_categories.py::CategoryBrowsingTest::test_display_products_by_selected_filter",
-  "tests/test_categories.py::CategoryBrowsingTest::test_electronic_category",
-  "tests/test_categories.py::CategoryBrowsingTest::test_product_details_display",
-  "tests/test_categories.py::CategoryBrowsingTest::test_subcategory_computer",
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_add_to_basket",
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_clear_products_shopping_basket",
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_update_cart_with_added_product",
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_update_shopping_basket_with_added_product",
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_update_shopping_cart_with_added_product"
+  "tests/test_categories.py::CategoryBrowsingTest::test_display_product_details_by_brand",
+  "tests/test_categories.py::CategoryBrowsingTest::test_subcategory_computer"
 ]

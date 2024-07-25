@@ -18,15 +18,16 @@ class ShoppingProcess(PageBase):
         add_button_num = self.wait_element_visibility(BASCET_BUTTON_NUM_LOCATOR)
         add_button_num.click()
         
-    def scroll_down(self):
+    def scroll_down650(self):
         self.driver.execute_script("scrollBy(0,650)")
 
-    def scroll_up(self):
+    def scroll_up650(self):
         self.driver.execute_script("scrollBy(0,-650)")
 
     def assert_basket_number(self):
         bascet_num = self.wait_element_visibility(BASCET_NUM)
         return bascet_num.text
+    
 
     def click_bascet_button(self):
         bascet_button = self.wait_element_visibility(BASCET_BUTTON_LOCATOR)

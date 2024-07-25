@@ -33,6 +33,10 @@ class CategoryProductListing(PageBase):
         subcategory_text = self.wait_element_visibility(SUBCATEGORY_COMPUTER)
         return subcategory_text.text
     
+    def screenshot_take_subcategory(self):
+        screenshot_path = SCREENSHOT_DETAILS_SUBCATEGORY
+        self.driver.save_screenshot(screenshot_path)
+        
     def click_search_bar(self):
         search_bar_area = self.wait_element_visibility(SEARCHBOX_LOCATOR)
         search_bar_area.click()
@@ -57,6 +61,10 @@ class CategoryProductListing(PageBase):
     def assert_brand_name(self):
         brand_text = self.wait_element_visibility(BRAND_TEXT_LOCATOR)
         return brand_text.text
+    
+    def take_screenshot_details(self):
+        screenshot_path = SCREENSHOT_DETAILS
+        self.driver.save_screenshot(screenshot_path)
     
 
 

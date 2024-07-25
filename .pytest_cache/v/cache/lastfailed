@@ -1,9 +1,1 @@
-{
-  "tests/test_categories.py::CategoryBrowsingTest::test_electronic_category": true,
-  "tests/test_categories.py::CategoryBrowsingTest::test_category_electronic": true,
-  "tests/test_categories.py::CategoryBrowsingTest::test_display_products_by_selected_filter": true,
-  "tests/test_categories.py::CategoryBrowsingTest::test_product_details_display": true,
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_add_to_basket": true,
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_update_cart_with_added_product": true,
-  "tests/test_shopping_process.py::ShoppingProcessTest::test_clear_products_shopping_basket": true
-}
+{}

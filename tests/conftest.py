@@ -1,19 +1,13 @@
-  
-
-import getpass
-from datetime import datetime
+import pytest
 from pathlib import Path
-
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.safari.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
-import pytest
-
 from constants.globalConstants import *
-
 
 @pytest.fixture(scope="function")
 def setup(request, browser, environment):

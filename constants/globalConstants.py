@@ -19,25 +19,25 @@ FILTER_TEXT_LOCATOR = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[2]/se
 FILTER_TEXT = ("Bilgisayar")
 
 BRAND_LOCATOR = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[2]/section/div[1]/div[3]/div/ul/div/div/li[1]/a")
-BRAND_TEXT = "Lenovo"
-BRAND_TEXT_LOCATOR = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[2]/section/div[1]/div[1]/div[1]/div/h1/text()")
-
+BRAND_TEXT = "Asus"
+BRAND_TEXT_LOCATOR = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[1]/section[2]/div/div/div/span[1]")
+                                
 #shopping_process.py
-
 BASCET_BUTTON_NUM_LOCATOR =(By.XPATH, "//*[@id='p-606679208']/div/span")
 BASCET_NUM = (By.CLASS_NAME, "basketTotalNum")
 BASCET_NUM_TEXT = "1"
 
 BASCET_BUTTON_LOCATOR = (By.CLASS_NAME, "iconsBasketWhite")
-
 PLUS_BUTTON = (By.XPATH,"//*[@id='newCheckout']/div/div[1]/div[1]/div[2]/section/table[2]/tbody/tr/td[1]/div[3]/div[2]/div/span[1]")
 
 PLUS_QUANTITY = (By.ID, "quantity_127254023919")
 PLUS_QUANTITY_TEXT = "2"
 
 CLEAR_BUTTON = (By.ID, "127254023919")
-
 AFTER_CLEAR_LOCATOR = (By.CLASS_NAME, "removeProd.svgIcon.svgIcon_trash")
 AFTER_CLEAR_TITLE = "Sepetin Boş Görünüyor"
 
-AYDINLATMA_METNI_BUTTON = (By.CLASS_NAME, "btn.btnBlack")
+
+SCREENSHOT_DETAILS_BY_BRAND =  r'/Users/standard/Desktop/Python-Selenium-POM-n11.com/screenshots/details_by_brand.png'
+SCREENSHOT_DETAILS =  r'/Users/standard/Desktop/Python-Selenium-POM-n11.com/screenshots/details.png'
+SCREENSHOT_DETAILS_SUBCATEGORY = r'/Users/standard/Desktop/Python-Selenium-POM-n11.com/screenshots/subcategory.png'

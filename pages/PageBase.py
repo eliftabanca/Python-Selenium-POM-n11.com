@@ -25,6 +25,14 @@ class PageBase:
             liste.append(i.text)
 
         return liste
+    
+    def if_assert_fail_screenshot(self, actual, expected, screenshot_path):
+        try:
+            assert actual == expected
+        except AssertionError:
+        # Take a screenshot when the assertion fails
+            #screenshot_path = "failure.png"
+            self.driver.save_screenshot(screenshot_path)
 
     def wait_element_visibility(self, locator):
         element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located(locator))
@@ -47,10 +55,4 @@ class PageBase:
     def get_URL(self):
         return self.driver.current_url
 
-    def if_assert_fail_screenshot(self, actual, expected, screenshot_path):
-        try:
-            assert actual == expected
-        except AssertionError:
-        # Take a screenshot when the assertion fails
-            #screenshot_path = "failure.png"
-            self.driver.save_screenshot(screenshot_path)
+    
